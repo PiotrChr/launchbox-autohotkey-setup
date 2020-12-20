@@ -10,9 +10,9 @@ processExists(Name) {
 }
 
 quitIfRunning(Name) {
-    If processExists("pcsx2.exe")
+    If processExists(%Name%)
     {
-        Process, Close, pcsx2.exe
+        Process, Close, %Name%
     }
 }
 
